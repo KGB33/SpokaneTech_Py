@@ -1,0 +1,10 @@
+{
+  "name": "spokanetech",
+  "sdk": "python",
+  "root-for": [
+    {
+      "source": "../"
+    }
+  ],
+  "exclude": [".venv"]
+}
