@@ -15,7 +15,7 @@ class SpokaneTech:
     @classmethod
     async def create(cls, dir: dagger.Directory | None = None) -> Self:
         if dir is None:
-            dir = await dag.current_module().source().directory("../")
+            raise ValueError("No source directory passed, make sure to set the `--dir` flag.")
         return cls(dir=dir)
 
     @function
